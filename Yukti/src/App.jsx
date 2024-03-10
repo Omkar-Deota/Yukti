@@ -1,11 +1,13 @@
-import BasicButtons from './components/button'
+// import BasicButtons from './components/button'
+import Sidebar from './components/sidebar'
 import './App.css'
 
 function App() {
   
   return (
     <>
-     <BasicButtons/>
+      <Sidebar />
+     {/* <BasicButtons/> */}
     </>
   )
 }
