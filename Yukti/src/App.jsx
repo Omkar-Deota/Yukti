@@ -1,13 +1,15 @@
 // import BasicButtons from './components/button'
-import Sidebar from './components/sidebar'
+// import Sidebar from './components/sidebar'
+import App1 from './components/loginPage'
 import './App.css'
 
 function App() {
   
   return (
     <>
-      <Sidebar />
+      {/* <Sidebar /> */}
      {/* <BasicButtons/> */}
+     <App1 />
     </>
   )
 }
