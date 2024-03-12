@@ -11,7 +11,7 @@ import { useState } from "react";
 import Login from "./login";
 import Signup from "./signup";
 
-function App1() {
+function Authentication() {
   const [checked, setChecked] = useState(true);
 
   const handleChange = (event) => {
@@ -52,4 +52,4 @@ function App1() {
   );
 }
 
-export default App1;
+export default Authentication;
