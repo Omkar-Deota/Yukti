@@ -1,4 +1,5 @@
-import Authentication from './components/Authentication'
+// import Authentication from './components/Authentication/Authentication'
+import MinePage from './components/Minepage/MinePage'
 import './App.css'
 
 function App() {
@@ -6,7 +7,8 @@ function App() {
   return (
     <>
 
-     <Authentication/>
+     {/* <Authentication/> */}
+     <MinePage/>
     </>
   )
 }
