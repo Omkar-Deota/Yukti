@@ -4,6 +4,7 @@ import image from "../../assets/images/pexels-braeson-holland-9092830.jpg"
 import { useState, useEffect } from "react";
 import styled from "@emotion/styled";
 import { Typography } from "@mui/material";
+import OutlinedTimeline from "./OutlinedTimeline";
 const MinePage = () => {
   const ImageOverlay = styled("div")(({ theme }) => ({
     position: "absolute",
@@ -78,6 +79,9 @@ const MinePage = () => {
             color: "white",
           }}
         ></div>
+      </div>
+      <div>
+        <OutlinedTimeline />
       </div>
     </>
   );
