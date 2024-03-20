@@ -42,7 +42,7 @@ function CurvedTimeline() {
     fontFamily: "Georgia, serif", // Different font for answer
     fontSize: "24px",
     fontWeight: "bold",
-    color: "rgb(75 3 39)", // Cool blue color
+    color: "rgb(75 3 39)", 
     marginBottom: "10px",
   };
 
