@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import styled from "@emotion/styled";
 import { Typography } from "@mui/material";
 import OutlinedTimeline from "./OutlinedTimeline";
+import Services from "./Services";
 const MinePage = () => {
   const ImageOverlay = styled("div")(({ theme }) => ({
     position: "absolute",
@@ -82,6 +83,7 @@ const MinePage = () => {
       </div>
       <div>
         <OutlinedTimeline />
+        <Services />
       </div>
     </>
   );

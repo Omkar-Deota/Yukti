@@ -21,6 +21,7 @@ function CurvedTimeline() {
   const containerStyle = {
     display: "flex",
     flexDirection: "column",
+    
     // alignItems: "center",
     // justifyContent: "center",
     textAlign: "center",
