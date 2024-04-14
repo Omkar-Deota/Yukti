@@ -1,4 +1,3 @@
-// import React from 'react';
 import {
   Timeline,
   TimelineItem,
@@ -12,18 +11,15 @@ import { Typography, Divider } from "@mui/material";
 
 function CurvedTimeline() {
   const data = [
-    { text: "Event 1" },
-    { text: "Event 2" },
-    { text: "Event 3" },
-    // Add more events as needed
+    { text: "Perfectly Scheduled" },
+    { text: "Hustle less" },
+    { text: "Remake at one go" },
+  
   ];
 
   const containerStyle = {
     display: "flex",
     flexDirection: "column",
-    
-    // alignItems: "center",
-    // justifyContent: "center",
     textAlign: "center",
     backgroundColor: "#f0f0f0",
     padding: "20px",
@@ -33,14 +29,14 @@ function CurvedTimeline() {
   };
 
   const textStyle = {
-    fontFamily: "Arial, sans-serif", // Different font for text
+    fontFamily: "Arial, sans-serif", 
     fontSize: "18px",
-    color: "#333", // Dark color for contrast
-    marginBottom: "10px", // Add some space below the text
+    color: "#333", 
+    marginBottom: "10px",
   };
 
   const answerStyle = {
-    fontFamily: "Georgia, serif", // Different font for answer
+    fontFamily: "Georgia, serif", 
     fontSize: "24px",
     fontWeight: "bold",
     color: "rgb(75 3 39)", 
