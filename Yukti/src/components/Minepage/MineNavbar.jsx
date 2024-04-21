@@ -15,7 +15,7 @@ import AccountCircle from '@mui/icons-material/AccountCircle';
 import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
-
+import { Link } from 'react-router-dom';
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
   borderRadius: theme.shape.borderRadius,
@@ -180,10 +180,11 @@ export default function MineNavbar() {
       open={isMenuIconOpen}
       onClose={handleMenuIconClose}
     >
-      <MenuItem onClick={handleMenuIconClose}>Make Request</MenuItem>
-      <MenuItem onClick={handleMenuIconClose}>Reschedule</MenuItem>
-      <MenuItem onClick={handleMenuIconClose}>Completed Orders</MenuItem>
-      <MenuItem onClick={handleMenuIconClose}>Revenue</MenuItem>
+      <MenuItem onClick={handleMenuIconClose}><Link to="/" style={{color:"black",textDecoration:"none"}}>Home</Link></MenuItem>
+      <MenuItem onClick={handleMenuIconClose}><Link to="/makeRequest" style={{color:"black",textDecoration:"none"}}>Make Request</Link></MenuItem>
+      <MenuItem onClick={handleMenuIconClose}><Link to="/reschedule" style={{color:"black",textDecoration:"none"}}>Reschedule</Link></MenuItem>
+      <MenuItem onClick={handleMenuIconClose}><Link to="/completedOrder" style={{color:"black",textDecoration:"none"}}>Completed Orders</Link></MenuItem>
+      <MenuItem onClick={handleMenuIconClose}><Link to="/revenue" style={{color:"black",textDecoration:"none"}}>Revenue</Link></MenuItem>
     </Menu>
   );
 
@@ -259,7 +260,7 @@ export default function MineNavbar() {
             color="inherit"
             aria-label="open drawer"
             sx={{ mr: 2 }}
-            onClick={handleMenuIconClick} // Adding onClick event for menu icon
+            onClick={handleMenuIconClick} 
           >
             <MenuIcon />
           </IconButton>
@@ -267,7 +268,7 @@ export default function MineNavbar() {
       </AppBar>
       {renderMobileMenu}
       {renderMenu}
-      {renderMenuIcon} {/* Adding the menu icon dropdown */}
+      {renderMenuIcon} 
     </Box>
   );
 }
